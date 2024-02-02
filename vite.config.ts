@@ -3,5 +3,8 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  build: {
+    outDir: 'dist',
+  },
   plugins: [remix({ unstable_ssr: false }), tsconfigPaths()],
 });
